@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243,240,235)    ;    
+    /* margin: 0px 50px; */
+    /* cursor: pointer; */
+    overflow-y: scroll;
+
+}
+
+.nav{
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-around ;
+}
+
+.nav-search{
+    /* background-color: green; */
+    /* width: 100px; */
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    /* color: blue; */
+    cursor: pointer;
+
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.search-box {
+    background-color: rgb(217, 241, 249);
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 250px;
+    padding: 12px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.search-box input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: large;
+}
+.nav-links{
+    /* background-color: green; */
+    display: flex ;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.nav-item {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    text-decoration: none;
+
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    color: gray;
+    /* padding: 10px; */
+}
+
+.nav-item i {
+    font-size: xx-large;
+    color: gray;
+    width: 100%;
+    height: 100%;
+}
+.nav-info{
+    /* background-color: green; */
+    /* width: 100px; */
+    height: 50px;
+    border-left:1px solid gray ;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    cursor: pointer;
+
+
+    gap:25px;
+}
+.icon-dotted{
+    width: 60px;
+    height: 50px;
+    text-align: center;
+
+    /* background-color: aqua; */
+}
+.icon-dotted i {
+    /* padding: 10px; */
+    font-size: 50px;
+    color: gray;
+    /* width: 50px;
+    height: 50px;    */
+
+}
+
+main {
+    margin: 0px 50px;
+}
+
+.active i{
+    color: black;
+}
+
+.active{
+    /* border-bottom: 1px solid gray; */
+
+    color: black;
+}
+.active::after {
+    content: "";
+    width: 70px;
+    border-bottom: 2px solid black ;
+}
+.nav-item:hover::after{
+    content: "";
+    width: 70px;
+    border-bottom: 2px solid black ;
+}
+.nav-item:hover ,.nav-item i:hover {
+    color: black;
+}
+.profile {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color: gray;
+}
+
+.profile .img{
+    /* content: ""; */
+    width: 50px;
+    height: 50px;
+    /* background-color: lightblue; */
+    border-radius: 50px;
+    background-image: url('../1674749273558.jpg');
+    background-size: contain;
+}
+
+
+.info-text {
+    color: goldenrod;
+    text-align: center;
+}
+
+
+.info-text:hover {
+    color: rgb(173, 124, 0);
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+
+
+
+.container {
+    /* position: relative; */
+    /* z-index: 1; */
+
+    width: 60%;
+    /* height: calc(100vh - 100px ); */
+    margin: 0px auto;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    /* background-color: black; */
+    gap: 20px;
+}
+
+.div-center {
+    height: 100%;
+    width: 50%;
+     /* background-color: rgb(205, 127, 127); */
+     overflow-y: scroll;
+
+}
+::-webkit-scrollbar{
+    width: 0px;
+} 
+.div-left {
+    height: 100%;
+    width: 25%;
+    /* background-color: gray; */
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+
+}
+.div-right {
+    height: 100%;
+
+    width: 25%;
+    
+    /* background-color: yellow; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    overflow-y: scroll;
+
+}
+
+.card {
+    margin-top: 10px ;
+    background-color: white;
+    width: 80%;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around ;
+    align-items: center;
+    
+}
+
+.card-followers{
+    margin-top: 20px;
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+   
+}
+.image {
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+
+}
+
+.post-card {
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+}
+
+
+.post-item-card {
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    width: 100%;
+    height: 600px;
+}
+
+
+hr {
+    margin: 10px 0px;
+}
